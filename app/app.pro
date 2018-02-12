@@ -4,6 +4,11 @@ QT += quick
 
 CONFIG += c++11
 
+VER_MAJ = 0
+VER_MIN = 0
+VER_PAT = 1
+VERSION = $$sprintf("%1.%2.%3", $$VER_MAJ, $$VER_MIN, $$VER_PAT)
+
 include($$PWD/src/main/main.pri)
 
 android {
@@ -37,9 +42,22 @@ android {
 }
 
 CONFIG(debug, debug|release) {
+    message("Debug build")
+
+    DEFINES += $$sprintf("APP_VERSION=\\\"%1_d\\\"", $$VERSION)
+
     CONFIG(MOCK) {
         message("The build contains mock data")
 
         include($$PWD/src/mock/mock.pri)
     }
+}
+
+CONFIG(release, debug|release) {
+    message("Release build")
+
+    DEFINES += QT_NO_DEBUG_OUTPUT
+    DEFINES += QT_NO_INFO_OUTPUT
+
+    DEFINES += $$sprintf("APP_VERSION=\\\"%1\\\"", $$VERSION)
 }
