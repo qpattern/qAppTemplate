@@ -1,4 +1,4 @@
 INCLUDEPATH += $$PWD/cpp
 
 RESOURCES += \
-    $$PWD/qml/qml.qrc
+    $$PWD/qml/ios.qrc

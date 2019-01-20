@@ -4,4 +4,4 @@ SOURCES += \
     $$PWD/cpp/main.cpp
 
 RESOURCES += \
-    $$PWD/qml/qml.qrc
+    $$PWD/qml/main.qrc
