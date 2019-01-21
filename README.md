@@ -78,3 +78,15 @@ files:
          them only C++ code is supported;
 * _resources_: in contains resources, such as fonts, images, and other assets;
          they are also divided in subfolders.
+
+## Build
+
+This repo contains a _.pro_ file that can be opened in _Qt Creator_ and use that to easily build the project.
+
+A _Makefile_ is also provided to be able to easily build the project in a CI pipeline.
+
+In case _qmake_ is not in _PATH_, it's possible to specify the location:
+
+```sh
+QMAKE="/opt/Qt/5.12.0/clang_64/bin/qmake" make build
+```
