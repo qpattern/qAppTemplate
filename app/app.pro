@@ -38,7 +38,6 @@ android {
 
     include($$PWD/src/desktop/desktop.pri)
     include($$PWD/src/win32/win32.pri)
-
 }
 
 CONFIG(debug, debug|release) {
@@ -50,6 +49,12 @@ CONFIG(debug, debug|release) {
         message("The build contains mock data")
 
         include($$PWD/src/mock/mock.pri)
+    }
+
+    CONFIG(TEST) {
+        message("Unit test")
+
+        include($$PWD/src/test/test.pri)
     }
 }
 
