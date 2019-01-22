@@ -5,7 +5,7 @@
 
 #define T(t, count) {\
     t test; \
-    count += QTest::qExec(&test, argc, argv); \
+    (count) += QTest::qExec(&test, argc, argv); \
 }
 
 int main(int argc, char** argv) {

@@ -4,22 +4,22 @@
 
 void TestExample::initTestCase()
 {
-    qDebug("Called before everything else.");
+    qDebug() << "Called before everything else.";
 }
 
 void TestExample::cleanupTestCase()
 {
-    qDebug("Called after test1 and test2.");
+    qDebug() << "Called after test1 and test2.";
 }
 
 void TestExample::init()
 {
-    qDebug("Called before each test.");
+    qDebug() << "Called before each test.";
 }
 
 void TestExample::cleanup()
 {
-    qDebug("Called after each test.");
+    qDebug() << "Called after each test.";
 }
 
 void TestExample::test1()
