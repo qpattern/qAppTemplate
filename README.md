@@ -85,6 +85,18 @@ This repo contains a _.pro_ file that can be opened in _Qt Creator_ and use that
 
 A _Makefile_ is also provided to be able to easily build the project in a CI pipeline.
 
+To see the list of all available targets use:
+
+```sh
+make help
+```
+
+The main ones are:
+
+* *build*: builds the project in release mode;
+* *test*: builds the project in debug mode and runs the tests;
+* *coverage*: like _test_, plus it evaluates the code coverage.
+
 In case _qmake_ is not in _PATH_, it's possible to specify the location:
 
 ```sh
