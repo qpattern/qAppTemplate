@@ -1,4 +1,12 @@
-# Qt app folder structure template
+# qAppTemplate
+
+## Requirements
+
+* [Qt](https://www.qt.io);
+* [make](https://www.gnu.org/software/make/);
+* [gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html) and [lcov](http://ltp.sourceforge.net/coverage/lcov.php).
+
+## Folder structure
 
 Having a common directory layout would allow for users familiar with one project
 to immediately feel at home with another one. I’m sure there are many good ways
