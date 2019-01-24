@@ -1,4 +1,4 @@
-#include <QGuiApplication>
+#include <QCoreApplication>
 #include <QtTest>
 
 #include "TestExample.hpp"
@@ -9,7 +9,7 @@
 }
 
 int main(int argc, char** argv) {
-    QGuiApplication app(argc, argv);
+    QCoreApplication app(argc, argv);
 
     int failedCount = 0;
 
