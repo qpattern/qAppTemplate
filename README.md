@@ -1,5 +1,7 @@
 # qAppTemplate
 
+![](https://gitlab.com/pasdam/qAppTemplate/badges/master/build.svg)
+
 ## Requirements
 
 * [Qt](https://www.qt.io);
