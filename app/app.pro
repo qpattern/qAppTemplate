@@ -9,35 +9,35 @@ VER_MIN = 0
 VER_PAT = 1
 VERSION = $$sprintf("%1.%2.%3", $$VER_MAJ, $$VER_MIN, $$VER_PAT)
 
-include($$PWD/src/main/main.pri)
+include($$PWD/main/main.pri)
 
 android {
     message("Android build")
 
-    include($$PWD/src/android/android.pri)
+    include($$PWD/android/android.pri)
 
 } else:ios {
     message("iOS build")
 
-    include($$PWD/src/ios/ios.pri)
+    include($$PWD/ios/ios.pri)
 
 } else:linux {
     message("Linux build")
 
-    include($$PWD/src/desktop/desktop.pri)
-    include($$PWD/src/linux/linux.pri)
+    include($$PWD/desktop/desktop.pri)
+    include($$PWD/linux/linux.pri)
 
 } else:osx {
     message("osX build")
 
-    include($$PWD/src/desktop/desktop.pri)
-    include($$PWD/src/osx/osx.pri)
+    include($$PWD/desktop/desktop.pri)
+    include($$PWD/osx/osx.pri)
 
 } else:win32 {
     message("Win32 build")
 
-    include($$PWD/src/desktop/desktop.pri)
-    include($$PWD/src/win32/win32.pri)
+    include($$PWD/desktop/desktop.pri)
+    include($$PWD/win32/win32.pri)
 }
 
 CONFIG(debug, debug|release) {
@@ -48,13 +48,13 @@ CONFIG(debug, debug|release) {
     CONFIG(MOCK) {
         message("The build contains mock data")
 
-        include($$PWD/src/mock/mock.pri)
+        include($$PWD/mock/mock.pri)
     }
 
     CONFIG(TEST) {
         message("Unit test")
 
-        include($$PWD/src/test/test.pri)
+        include($$PWD/test/test.pri)
     }
 }
 

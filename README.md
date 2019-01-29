@@ -19,24 +19,23 @@ of doing this, but this is the source tree setup I always use:
 ├── .build
 ├── app
 │   ├── app.pro
-│   └── src
-│       ├── android
-│       ├── desktop
-│       ├── ios
-│       ├── linux
-│       ├── main
-│       |   ├── main.pri
-│       |   ├── cpp
-│       |   |   └── main.cpp
-│       |   ├── js
-│       |   ├── qml
-│       |   |   ├── main.qml
-│       |   |   └── main.qrc
-│       |   └── resources
-│       ├── mock
-│       ├── osx
-│       ├── test
-│       └── win32
+│   ├── android
+│   ├── desktop
+│   ├── ios
+│   ├── linux
+│   ├── main
+│   |   ├── main.pri
+│   |   ├── cpp
+│   |   |   └── main.cpp
+│   |   ├── js
+│   |   ├── qml
+│   |   |   ├── main.qml
+│   |   |   └── main.qrc
+│   |   └── resources
+│   ├── mock
+│   ├── osx
+│   ├── test
+│   └── win32
 ├── doc
 ├── libs
 │     .3 libs.pro
