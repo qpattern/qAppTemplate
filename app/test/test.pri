@@ -13,7 +13,7 @@ HEADERS += \
     $$PWD/cpp/TestExample.hpp
 
 # Remove the run main
-SOURCES ~= s/\s?.*main\.cpp//
+SOURCES -= $$find(SOURCES, main.cc)
 
 SOURCES += \
     $$PWD/cpp/main.cpp \
