@@ -1,6 +1,6 @@
 # qAppTemplate
 
-![](https://gitlab.com/pasdam/qAppTemplate/badges/master/build.svg)
+![https://gitlab.com/pasdam-github/qAppTemplate/pipelines](https://gitlab.com/pasdam-github/qAppTemplate/badges/master/build.svg)
 
 ## Requirements
 
